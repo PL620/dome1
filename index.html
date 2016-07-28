@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			
+			
+		</title>
+		<style >
+		body{
+			background:blue;
+				animation:6s colors infinite linear;	
+			}
+			@keyframes colors {
+				o%{
+					background:red;
+				}
+				20%{
+					background: puepie;
+				}
+				40%{
+					background:orange;
+			    }
+				60%{
+					background:yellow;
+				}
+				80%{
+					background: green;
+				}
+				100%{
+					background: blue;
+				}
+			}
+		    #w { 
+		    	width:300px;
+		    	height:300px;
+		    	border:2px solid red;
+		    	border-radius:50%;
+		    	margin:100px auto;
+		    	background-image: repeating-radial-gradient(circle,red 30px,orange 30px,green 40px);
+		    	animation: 4s round infinite linear;
+		    }
+		    @keyframes round{
+		    0%{
+		    	transform:scale(.3);
+		    }
+		    50%{
+		    	transform: scale(1);
+		    }
+		    100%{
+		    	transform: scale(.3);
+		    }
+		}
+		</style>
+	</head>
+	<body>
+	   	<div id="w"></div>	
+	</body>
+</html>
